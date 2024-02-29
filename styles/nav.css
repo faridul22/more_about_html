@@ -2,11 +2,28 @@ nav>ul {
     display: flex;
 }
 
-nav>ul>li {
+nav>ul li {
     list-style: none;
     margin-right: 10px;
 }
 
-nav>ul>li>a {
+nav>ul li:hover {
+    background-color: rgb(105, 158, 242);
+}
+
+nav>ul>li a {
     text-decoration: none;
+    color: black;
+}
+
+/* dropdown styles */
+nav>ul>li>.dropdown {
+    display: none;
+}
+
+nav li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color: lightblue;
+    padding-left: 10px;
 }
