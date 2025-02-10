@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore Table</title>
-    <link rel="stylesheet" href="styles/table.css">
-    <link rel="stylesheet" href="styles/nav.css">
-</head>
+    <!-- <link rel="stylesheet" href="styles/table.css"> -->
+    <link rel="stylesheet" href="styles/nav.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="table.html">Table</a>
-                    <ul class="dropdown">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="form.html">Form</a></li>
-                        <li><a href="index.html">Audio</a></li>
-                    </ul>
-                </li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="form.html">Form</a></li>
-                <li><a href="index.html">Audio</a></li>
+      <nav>
+        <ul>
+          <li>
+            <a href="table.html">Table</a>
+            <ul class="dropdown">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="form.html">Form</a></li>
+              <li><a href="index.html">Audio</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="index.html">Audio</a></li>
+          <li>
+            <a href="meadia/MD Farid Resume (1).pdf" download>Resume</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section>
+       <section>
             <table>
                 <caption>Employee salary sheet</caption>
                 <thead>
@@ -70,7 +82,44 @@
                 </tbody>
             </table>
         </section>
+      <section style="margin-top: 20px">
+        <table>
+          <caption>
+            Bio Data
+          </caption>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Job</th>
+              <th>Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Farid</td>
+              <td>25</td>
+              <td>Developer</td>
+              <td>4000</td>
+            </tr>
+            <tr>
+              <td>Shanta</td>
+              <td>20</td>
+              <td>Tutor</td>
+              <td>3000</td>
+            </tr>
+            <tr>
+              <td>Faiza Moni</td>
+              <td>0.9</td>
+              <td>Boss</td>
+              <td>7000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td colspan="4">Total Employee: 4</td>
+          </tfoot>
+        </table>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
